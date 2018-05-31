@@ -12,10 +12,15 @@ class Contacts extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <div>My name is {this.props.name}</div>
     );
   }
 }
 
-ReactDOM.render(<Contacts/>, document.getElementById('root'));
+ReactDOM.render(
+	React.createElement(Contacts, {
+		name: "Bob",
+	}),
+		document.getElementById("root")
+	);
 registerServiceWorker();
