@@ -4,5 +4,18 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+class Contacts extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div></div>
+    );
+  }
+}
+
+ReactDOM.render(<Contacts/>, document.getElementById('root'));
 registerServiceWorker();
